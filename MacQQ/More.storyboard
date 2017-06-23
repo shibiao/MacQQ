@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="Avi-OA-ADw">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--More View Controller-->
+        <scene sceneID="DJ5-yh-vvi">
+            <objects>
+                <viewController id="Avi-OA-ADw" customClass="MoreViewController" customModule="MacQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="bTT-1Y-prM">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VGf-Ls-PwS">
+                                <rect key="frame" x="146" y="124" width="188" height="21"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="在此添加自定义视图" id="rAA-hi-Da0">
+                                    <font key="font" size="20" name=".PingFangSC-Regular"/>
+                                    <color key="textColor" red="0.7284148319" green="0.051603151690000001" blue="0.14849062760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="VGf-Ls-PwS" firstAttribute="centerY" secondItem="bTT-1Y-prM" secondAttribute="centerY" id="9zj-Tw-zLj"/>
+                            <constraint firstItem="VGf-Ls-PwS" firstAttribute="centerX" secondItem="bTT-1Y-prM" secondAttribute="centerX" id="hrp-oh-1vE"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="qQN-bF-Mmp" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49" y="403"/>
+        </scene>
+    </scenes>
+</document>

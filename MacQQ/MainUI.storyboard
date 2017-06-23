@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="XVA-Xh-9Jm">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+        <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="YN3-Fi-4s5">
+            <objects>
+                <windowController id="XVA-Xh-9Jm" customClass="MainUIWindowController" customModule="MacQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="jS5-kr-gEm">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="313" width="480" height="270"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                    </window>
+                    <connections>
+                        <segue destination="OCR-ko-hCU" kind="relationship" relationship="window.shadowedContentViewController" id="2as-2q-oaS"/>
+                    </connections>
+                </windowController>
+                <customObject id="hWR-nl-Plw" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="165"/>
+        </scene>
+        <!--Main View Controller-->
+        <scene sceneID="qxV-ef-Dhq">
+            <objects>
+                <viewController id="OCR-ko-hCU" customClass="MainViewController" customModule="MacQQ" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="fDC-al-Lc2">
+                        <rect key="frame" x="0.0" y="0.0" width="800" height="600"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="ZfQ-1a-hBN">
+                                <rect key="frame" x="0.0" y="0.0" width="800" height="546"/>
+                            </customView>
+                            <customView translatesAutoresizingMaskIntoConstraints="NO" id="8m0-ZF-4Xt">
+                                <rect key="frame" x="0.0" y="546" width="800" height="54"/>
+                                <subviews>
+                                    <stackView distribution="fill" orientation="horizontal" alignment="top" spacing="30" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0k3-37-avr">
+                                        <rect key="frame" x="331" y="14" width="138" height="26"/>
+                                        <subviews>
+                                            <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="ypv-8o-sQ0">
+                                                <rect key="frame" x="0.0" y="0.0" width="26" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="26" id="AKw-A1-P2N"/>
+                                                    <constraint firstAttribute="height" constant="26" id="Lph-vE-6nh"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="chat_normal" imagePosition="only" alignment="center" alternateImage="chat_highlight" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="5Xi-Ba-F4Y">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="chatClicked:" target="OCR-ko-hCU" id="DlD-ZK-jMA"/>
+                                                </connections>
+                                            </button>
+                                            <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="z5J-MQ-hzL">
+                                                <rect key="frame" x="56" y="0.0" width="26" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="66L-PC-KOQ"/>
+                                                    <constraint firstAttribute="width" constant="26" id="c39-NG-YVa"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="contact_normal" imagePosition="only" alignment="center" alternateImage="contact_highlight" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="sJN-e5-KFS">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="contactClicked:" target="OCR-ko-hCU" id="Qup-8u-64g"/>
+                                                </connections>
+                                            </button>
+                                            <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="0TC-TN-DXe">
+                                                <rect key="frame" x="112" y="0.0" width="26" height="26"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26" id="8Fl-fG-dye"/>
+                                                    <constraint firstAttribute="width" constant="26" id="l3h-H7-8j3"/>
+                                                </constraints>
+                                                <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="more_normal" imagePosition="only" alignment="center" alternateImage="more_hightlight" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="OaT-oa-mnK">
+                                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                                    <font key="font" metaFont="system"/>
+                                                </buttonCell>
+                                                <connections>
+                                                    <action selector="moreClicked:" target="OCR-ko-hCU" id="1St-Ga-Lev"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <visibilityPriorities>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                            <integer value="1000"/>
+                                        </visibilityPriorities>
+                                        <customSpacing>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                            <real value="3.4028234663852886e+38"/>
+                                        </customSpacing>
+                                    </stackView>
+                                    <textField focusRingType="none" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4LZ-fP-ego">
+                                        <rect key="frame" x="90" y="16" width="120" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="QCI-SK-frj"/>
+                                        </constraints>
+                                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" focusRingType="none" bezelStyle="round" id="ybL-io-Il2">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="4LZ-fP-ego" firstAttribute="leading" secondItem="8m0-ZF-4Xt" secondAttribute="leading" constant="90" id="BsT-wY-oLR"/>
+                                    <constraint firstAttribute="height" constant="54" id="FsR-AY-KFv"/>
+                                    <constraint firstItem="0k3-37-avr" firstAttribute="centerX" secondItem="8m0-ZF-4Xt" secondAttribute="centerX" id="Ryk-o0-ezz"/>
+                                    <constraint firstItem="0k3-37-avr" firstAttribute="centerY" secondItem="8m0-ZF-4Xt" secondAttribute="centerY" id="aOi-Lu-g8h"/>
+                                    <constraint firstItem="4LZ-fP-ego" firstAttribute="centerY" secondItem="8m0-ZF-4Xt" secondAttribute="centerY" id="yje-a5-1sa"/>
+                                </constraints>
+                            </customView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="8m0-ZF-4Xt" firstAttribute="top" secondItem="fDC-al-Lc2" secondAttribute="top" id="7yo-at-rjb"/>
+                            <constraint firstItem="ZfQ-1a-hBN" firstAttribute="top" secondItem="8m0-ZF-4Xt" secondAttribute="bottom" id="K9C-fw-RI3"/>
+                            <constraint firstAttribute="trailing" secondItem="ZfQ-1a-hBN" secondAttribute="trailing" id="STq-wg-LNE"/>
+                            <constraint firstItem="8m0-ZF-4Xt" firstAttribute="leading" secondItem="fDC-al-Lc2" secondAttribute="leading" id="Xms-FJ-54N"/>
+                            <constraint firstItem="ZfQ-1a-hBN" firstAttribute="leading" secondItem="fDC-al-Lc2" secondAttribute="leading" id="ac0-g7-WIM"/>
+                            <constraint firstAttribute="bottom" secondItem="ZfQ-1a-hBN" secondAttribute="bottom" id="mJy-KY-fMU"/>
+                            <constraint firstAttribute="trailing" secondItem="8m0-ZF-4Xt" secondAttribute="trailing" id="ufR-kK-O7h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="baseView" destination="ZfQ-1a-hBN" id="pCa-zc-Nt4"/>
+                        <outlet property="chatBtn" destination="ypv-8o-sQ0" id="jKR-Uf-WAW"/>
+                        <outlet property="contactBtn" destination="z5J-MQ-hzL" id="qmA-Xv-T57"/>
+                        <outlet property="moreBtn" destination="0TC-TN-DXe" id="BHn-yA-L7O"/>
+                    </connections>
+                </viewController>
+                <customObject id="t09-xZ-Wwb" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="178" y="683"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="chat_highlight" width="26" height="26"/>
+        <image name="chat_normal" width="26" height="26"/>
+        <image name="contact_highlight" width="26" height="26"/>
+        <image name="contact_normal" width="26" height="26"/>
+        <image name="more_hightlight" width="26" height="26"/>
+        <image name="more_normal" width="26" height="26"/>
+    </resources>
+</document>
