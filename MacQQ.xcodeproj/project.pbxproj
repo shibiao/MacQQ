@@ -43,7 +43,6 @@
 		911096161EA7570500CF941B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9110961C1EA757E900CF941B /* LoginWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginWindowController.swift; sourceTree = "<group>"; };
 		9110961E1EA75AF500CF941B /* SBImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBImageView.swift; sourceTree = "<group>"; };
-		9110964B1EA8596800CF941B /* MacQQ.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MacQQ.entitlements; sourceTree = "<group>"; };
 		911096501EA85E2600CF941B /* LoginSetupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginSetupViewController.swift; sourceTree = "<group>"; };
 		911096791EA8A4DF00CF941B /* MainUI.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainUI.storyboard; sourceTree = "<group>"; };
 		9110967C1EA8A84A00CF941B /* MainUIWindowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainUIWindowController.swift; sourceTree = "<group>"; };
@@ -61,6 +60,7 @@
 		911096CD1EA9F40500CF941B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		911096CF1EA9F92B00CF941B /* ChatTableCellView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTableCellView.swift; sourceTree = "<group>"; };
 		911096D51EAA043F00CF941B /* ChatTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatTextView.swift; sourceTree = "<group>"; };
+		91788B2C1F137B34006FFD1B /* MacQQ.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = MacQQ.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 		9110960C1EA7570500CF941B /* MacQQ */ = {
 			isa = PBXGroup;
 			children = (
-				9110964B1EA8596800CF941B /* MacQQ.entitlements */,
+				91788B2C1F137B34006FFD1B /* MacQQ.entitlements */,
 				9110960D1EA7570500CF941B /* AppDelegate.swift */,
 				911096C91EA9EFF000CF941B /* SBApplication.swift */,
 				9110964F1EA85C6D00CF941B /* LoginWindow */,
