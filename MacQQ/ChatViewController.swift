@@ -22,6 +22,8 @@ class ChatViewController: NSViewController {
     @IBOutlet weak var toolView: NSView!
     
     @IBOutlet weak var tableView: NSTableView!
+    @IBOutlet weak var splitView: NSSplitView!
+    let flowLayout = NSCollectionViewFlowLayout()
     //与好友聊天记录
     var friendsData = [ChatTableCellModel]()
     override func viewDidLoad() {
@@ -44,6 +46,7 @@ class ChatViewController: NSViewController {
         messageData.append(model3)
         messageData.append(model4)
         
+        
     }
     func setupUI() {
         headerView.wantsLayer = true
@@ -63,11 +66,11 @@ class ChatViewController: NSViewController {
     //配置collectionView
     func configCollectionView() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.01) {
-            let flowLayout = NSCollectionViewFlowLayout()
-            flowLayout.itemSize = NSMakeSize(self.collectionView.frame.width, 70)
-            flowLayout.minimumLineSpacing = 0
-            flowLayout.minimumInteritemSpacing = 0
-            self.collectionView.collectionViewLayout = flowLayout
+            
+            self.flowLayout.itemSize = NSMakeSize(self.collectionView.frame.width, 70)
+            self.flowLayout.minimumLineSpacing = 0
+            self.flowLayout.minimumInteritemSpacing = 0
+            self.collectionView.collectionViewLayout = self.flowLayout
             let nib = NSNib(nibNamed: "ChatIem", bundle: nil)
             self.collectionView.register(nib, forItemWithIdentifier: "ChatIem")
             self.collectionView.wantsLayer = true
@@ -119,6 +122,7 @@ extension ChatViewController: ChatTextViewDelegate{
             self.tableView.reloadData()
             let rect = self.tableView.rect(ofRow: self.friendsData.count - 1)
             self.tableView.scroll(NSMakePoint(rect.origin.x, rect.origin.y))
+            
         }
     }
 }
@@ -143,4 +147,9 @@ extension ChatViewController: NSTableViewDataSource ,NSTableViewDelegate {
     }
 
     
+}
+extension ChatViewController: NSSplitViewDelegate {
+    func splitViewDidResizeSubviews(_ notification: Notification) {
+        self.flowLayout.itemSize = NSMakeSize(self.collectionView.frame.width, 70)
+    }
 }

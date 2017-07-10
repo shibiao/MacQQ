@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.19"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -24,10 +24,10 @@
                 <customView translatesAutoresizingMaskIntoConstraints="NO" id="m3t-XZ-osN">
                     <rect key="frame" x="0.0" y="0.0" width="200" height="70"/>
                     <subviews>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-AW-Ril">
-                            <rect key="frame" x="64" y="15" width="118" height="14"/>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="rbe-AW-Ril">
+                            <rect key="frame" x="64" y="15" width="33" height="14"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="Adb-Vg-Mna">
-                                <font key="font" metaFont="system" size="11"/>
+                                <font key="font" metaFont="smallSystem"/>
                                 <color key="textColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                             </textFieldCell>
@@ -40,8 +40,8 @@
                             </constraints>
                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="personalImg" id="waw-I7-RJW"/>
                         </imageView>
-                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GQV-X3-rZt">
-                            <rect key="frame" x="64" y="38" width="118" height="17"/>
+                        <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GQV-X3-rZt">
+                            <rect key="frame" x="64" y="38" width="37" height="17"/>
                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="uGG-8B-bJK">
                                 <font key="font" metaFont="system"/>
                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
@@ -50,8 +50,8 @@
                         </textField>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="trailing" secondItem="GQV-X3-rZt" secondAttribute="trailing" constant="20" id="3Qp-rw-vNO"/>
-                        <constraint firstAttribute="trailing" secondItem="rbe-AW-Ril" secondAttribute="trailing" constant="20" id="FEd-up-ffy"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="GQV-X3-rZt" secondAttribute="trailing" constant="20" id="3Qp-rw-vNO"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="rbe-AW-Ril" secondAttribute="trailing" constant="20" id="FEd-up-ffy"/>
                         <constraint firstItem="6ES-c2-9jF" firstAttribute="centerY" secondItem="m3t-XZ-osN" secondAttribute="centerY" id="Flk-kL-hz6"/>
                         <constraint firstItem="GQV-X3-rZt" firstAttribute="leading" secondItem="6ES-c2-9jF" secondAttribute="trailing" constant="8" id="P3R-h1-cOW"/>
                         <constraint firstItem="rbe-AW-Ril" firstAttribute="bottom" secondItem="6ES-c2-9jF" secondAttribute="bottom" id="Pk4-lb-cHf"/>

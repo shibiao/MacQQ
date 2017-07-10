@@ -26,6 +26,7 @@ class ChatTextView: NSTextView {
         //回车键
         if event.keyCode == 36 {
             self.chatDelegate?.chatTextView(self, returnMessage: self.attributedString())
+            
         }else {
             super.keyDown(with: event)
         }
