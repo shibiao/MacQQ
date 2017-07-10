@@ -228,7 +228,7 @@
 				TargetAttributes = {
 					911096091EA7570500CF941B = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = W547SRU75H;
+						DevelopmentTeam = M54Y5FDG74;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -416,7 +416,7 @@
 				CODE_SIGN_ENTITLEMENTS = MacQQ/MacQQ.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = W547SRU75H;
+				DEVELOPMENT_TEAM = M54Y5FDG74;
 				INFOPLIST_FILE = MacQQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = s.MacQQ;
@@ -433,7 +433,7 @@
 				CODE_SIGN_ENTITLEMENTS = MacQQ/MacQQ.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = W547SRU75H;
+				DEVELOPMENT_TEAM = M54Y5FDG74;
 				INFOPLIST_FILE = MacQQ/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = s.MacQQ;
