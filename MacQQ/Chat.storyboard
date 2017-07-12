@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="VIl-Lj-1ej">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16F73" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="VIl-Lj-1ej">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13122.19"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="12118"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
         <capability name="stacking Non-gravity area distributions on NSStackView" minToolsVersion="7.0" minSystemVersion="10.11"/>
     </dependencies>
@@ -22,14 +22,14 @@
                                         <rect key="frame" x="0.0" y="0.0" width="186" height="496"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <subviews>
-                                            <scrollView wantsLayer="YES" ambiguous="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBx-WZ-01X">
-                                                <rect key="frame" x="0.0" y="0.0" width="186" height="496"/>
-                                                <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="9vb-4C-lqK">
-                                                    <rect key="frame" x="0.0" y="0.0" width="186" height="496"/>
+                                            <scrollView wantsLayer="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RBx-WZ-01X">
+                                                <rect key="frame" x="0.0" y="0.0" width="200" height="496"/>
+                                                <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="9vb-4C-lqK">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="496"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <collectionView ambiguous="YES" selectable="YES" id="jE7-il-IAh">
-                                                            <rect key="frame" x="0.0" y="0.0" width="186" height="496"/>
+                                                        <collectionView selectable="YES" id="jE7-il-IAh">
+                                                            <rect key="frame" x="0.0" y="0.0" width="200" height="496"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <collectionViewFlowLayout key="collectionViewLayout" minimumInteritemSpacing="10" minimumLineSpacing="10" id="Jmw-Km-be5">
                                                                 <size key="itemSize" width="0.0" height="70"/>
@@ -44,8 +44,7 @@
                                                     <color key="backgroundColor" name="controlHighlightColor" catalog="System" colorSpace="catalog"/>
                                                 </clipView>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="300" id="GxK-FI-gPO"/>
-                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="T0X-XA-NTj"/>
+                                                    <constraint firstAttribute="width" constant="200" id="T0X-XA-NTj"/>
                                                 </constraints>
                                                 <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="bbw-ea-1f8">
                                                     <rect key="frame" x="0.0" y="480" width="200" height="16"/>
@@ -123,7 +122,7 @@
                                             <customView translatesAutoresizingMaskIntoConstraints="NO" id="0Ed-fs-3N6">
                                                 <rect key="frame" x="0.0" y="452" width="475" height="44"/>
                                                 <subviews>
-                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="865-Wj-nu9">
+                                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="865-Wj-nu9">
                                                         <rect key="frame" x="18" y="13" width="31" height="17"/>
                                                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="小明" id="qeP-9H-GcL">
                                                             <font key="font" size="13" name=".PingFangSC-Regular"/>
@@ -144,7 +143,7 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="475" height="120"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <subviews>
-                                                        <textView verticallyResizable="YES" usesFontPanel="YES" findStyle="bar" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" smartInsertDelete="YES" id="EGs-Ie-iBU" customClass="ChatTextView" customModule="MacQQ" customModuleProvider="target">
+                                                        <textView usesFontPanel="YES" findStyle="bar" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" allowsNonContiguousLayout="YES" smartInsertDelete="YES" id="EGs-Ie-iBU" customClass="ChatTextView" customModule="MacQQ" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="0.0" width="475" height="120"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
