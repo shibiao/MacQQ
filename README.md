@@ -5,6 +5,8 @@ mac版QQ,swift,macOS
 
 ![1](https://github.com/shibiao/MacQQ/blob/master/WX20170713-100224.png)
 
+***
+
 简书：[Swift3开发Mac版QQ界面](http://www.jianshu.com/p/024662ac5bdd)
 
 Mac版QQ界面搭建相对于原生Mac界面要稍微困难一点，如下图，Mac版QQ基本框架搭建如下：
