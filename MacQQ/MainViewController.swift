@@ -56,6 +56,7 @@ class MainViewController: NSViewController {
             vc = NSStoryboard(name: name, bundle: nil).instantiateInitialController() as! MoreViewController
             button.image = #imageLiteral(resourceName: "more_hightlight")
         }
+        self.addChildViewController(vc!)
         if let tmpView = vc?.view {
             baseView.replaceSubview(oldView, with: tmpView)
             oldView = tmpView
